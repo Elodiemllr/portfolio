@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --cache \"src/**/*.{js,jsx,ts,tsx}\"",
+      "lint:fix": "eslint --cache --fix \"src/**/*.{js,jsx,ts,tsx}\""
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,11 @@
     "url": "https://github.com/Elodiemllr/portfolio/issues"
   },
   "homepage": "https://github.com/Elodiemllr/portfolio#readme",
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.4.1"
+  }
 }
