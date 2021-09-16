@@ -27,3 +27,15 @@ if(navClose){
     }
     )
 }
+
+const navLink = document.querySelectorAll('.nav__link');
+
+//on créer une function qui quand on click sur un nav link de notre menu, on cache le menu en lui enlevant sa classe
+function linkAction() {
+    const navMenu = document.getElementById('nav-menu')
+
+    navMenu.classList.remove('show-menu')
+}
+
+//on execute la fonction pour chacun de nox nav link
+navLink.forEach(n => n.addEventListener('click', linkAction))
