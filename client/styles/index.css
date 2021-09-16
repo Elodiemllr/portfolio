@@ -13,10 +13,10 @@
     --text-color: hsl(var(--hue-color), 95%, 4%);;
     --text-color-light: hsl(var(--hue-color), 95%, 100%);;
     --input-color:hsl(var(--hue-color), 95%, 0%); ;
-    --body-color:hsl(var(--hue-color), 95%, 100%); ;
+    --body-color: hsl(0, 0%, 95%); ;
     --container-color: hsl(var(--hue-color), 95%, 0%);;
 
-    --body-font: 'Roboto', sans-serif ;
+    --body-font: 'Roboto Condensed', sans-serif;
 
     --big-font-size: 2rem;
     --h1-font-size:1.5rem ;
@@ -124,4 +124,98 @@ img{
 .grid{
   display: grid;  
   gap: 1.5rem
+}
+
+.header{ 
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--body-color);
+}
+
+/*navigation*/
+.nav{
+    max-width: 950px;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo, .nav__toggle {
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+
+.nav__logo:hover   {
+    color: var(--first-color)
+}
+
+.nav__toggle{
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.nav__toggle:hover{
+    color: var(--first-color)
+}
+
+@media screen and (max-width: 770px){
+    .nav__menu{
+        position: fixed;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--body-color);
+        padding: 2rem 1.5rem 4rem;
+        box-shadow: 0 -1px 4px rgba(0,0,0,.15);
+        border-radius: 1.5rem 1.5rem 0 0 ;
+        transition: .3s;
+    }
+}
+
+.nav__list{
+    /*https://developer.mozilla.org/fr/docs/Web/CSS/grid-template-columns*/
+    grid-template-columns: repeat(3, 1fr);
+    /*https://developer.mozilla.org/fr/docs/Web/CSS/gap*/
+    gap: 2rem;
+}
+
+.nav__link{
+display: flex;
+flex-direction: column;
+align-items: center;
+font-size: var(--small-font-size);
+color: var(--title-color);
+font-weight:  var(--font-medium); 
+
+}
+
+.nav__link:hover {
+color: var(--first-color)
+}
+
+.nav__icon{
+    font-size: 1.2rem;
+}
+
+
+.nav__close{
+    position: absolute;
+    right: 1.3rem;
+    bottom: .5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--first-color-alt)
+}
+
+.nav__close:hover{
+    color: var(--hue-color)
+}
+
+/*show menu*/
+.show-menu{
+    bottom: 0;
 }
