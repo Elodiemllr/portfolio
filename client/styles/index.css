@@ -456,7 +456,7 @@ img {
 }
 
 /*on tourne les fleches lorsque le notre skills concent sera ouvert*/
-.skills__open,
+
 .skills__arrow {
     transform: rotate(-180deg);
 }
