@@ -487,6 +487,8 @@ img {
     display: grid;
     grid-template-columns: 1fr max-content 1fr;
     column-gap: 1.5rem;
+    width: 50%;
+    margin: auto;
 }
 
 .qualification__title {
@@ -526,4 +528,51 @@ img {
 
 .qualification__active[data-content] {
     display: block;
+}
+
+.qualification__button.qualification__active {
+    color: var(--first-color);
+}
+
+/*portfolio*/
+.portfolio__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    margin: auto;
+}
+
+.portfolio__box {
+    height: 15rem;
+    margin: 0.2rem;
+    position: relative;
+}
+
+.portfolio__img {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.portfolio__sitelink {
+    position: absolute;
+    z-index: 2;
+    background: blue;
+    width: fit-content;
+    height: fit-content;
+    top: 7rem;
+    left: 6rem;
+}
+
+.portfolio__github {
+    position: absolute;
+    z-index: 3;
+    background: aquamarine;
+    width: fit-content;
+    height: fit-content;
+    top: 10rem;
+    left: 6rem;
 }

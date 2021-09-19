@@ -42,6 +42,7 @@ const skillsContent = document.getElementsByClassName("skills__content"),
 function toggleSkills() {
     let itemClass = this.parentNode.className;
     var i;
+
     for (i = 0; i < skillsContent.length; i++) {
         skillsContent[i].className = "skills__content skills__close";
     }
@@ -67,9 +68,19 @@ tabs.forEach((tab) => {
             tabContent.classList.remove("qualification__active");
         });
         target.classList.add("qualification__active");
-        tabs.forEach((tb) => {
-            tb.classList.remove("qualification__active");
+        tabs.forEach((tab) => {
+            tab.classList.remove("qualification__active");
         });
         tab.classList.add("qualification__active");
     });
+});
+
+/*Swiper portfolio*/
+let swiper = new Swiper(".portfolio__container", {
+    cssMode: true,
+    loop: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
 });
