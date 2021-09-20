@@ -1,4 +1,5 @@
 /*show menu */
+
 //on recupère notre element par son id
 const navMenu = document.getElementById("nav-menu"),
     navToggle = document.getElementById("nav-toggle"),
@@ -75,12 +76,15 @@ tabs.forEach((tab) => {
     });
 });
 
-/*Swiper portfolio*/
-let swiper = new Swiper(".portfolio__container", {
-    cssMode: true,
-    loop: true,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
+/* portfolio*/
+const imgHover = document.querySelectorAll("#portfolio__imgHover");
+
+console.log(imgHover);
+
+function colorChange(e) {
+    e.target.classList.add("test");
+}
+
+imgHover.forEach((el) => {
+    el.addEventListener("click", colorChange);
 });

@@ -576,3 +576,7 @@ img {
     top: 10rem;
     left: 6rem;
 }
+
+.test {
+    opacity: 0.1;
+}
