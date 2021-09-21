@@ -215,6 +215,12 @@ img {
     bottom: 0;
 }
 
+/*Active link */
+
+.active-link {
+    color: var(--first-color);
+}
+
 /*HOME */
 
 .home__container {
@@ -579,4 +585,107 @@ img {
 
 .portfolio__hover {
     opacity: 0.1;
+}
+
+/* CONTACT */
+
+.contact__container {
+    row-gap: 3rem;
+}
+
+.contact__information {
+    display: flex;
+    margin-bottom: var(--mb-2);
+}
+
+.contact__icon {
+    font-size: 2rem;
+    color: var(--body-color);
+    margin-right: var(--mb-0-75);
+}
+
+.contact__title {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+}
+
+.contact__subtitle {
+    font-size: var(--small-font-size);
+    color: --text-color-light;
+}
+
+.contact__content {
+    background-color: var(--text-color-light);
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem 0.25rem;
+}
+
+.contact__label {
+    font-size: var(--smaller-font-size);
+    color: var(--title-color);
+}
+
+.contact__input {
+    width: 100%;
+    color: --text-color;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    border: none;
+    outline: none;
+    padding: 0.25rem 0.5rem 0.5rem 0;
+}
+
+/* footer */
+.footer {
+    padding-top: 2rem;
+}
+
+.footer__container {
+    row-gap: 3.5rem;
+}
+
+.footer__bg {
+    background-color: var(--first-color-second);
+    pad: 2rem 0 3rem;
+}
+
+.footer__title {
+    font-size: var(--h1-font-size);
+    margin-bottom: var(--mb-0-25);
+}
+.footer__subtitle {
+    font-size: var(--small-font-size);
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.footer__link:hover {
+    color: var(--first-color-lighter);
+}
+
+.footer__social {
+    font-size: 1.25rem;
+    margin-right: var(--mb-1-5);
+}
+.footer__social:hover {
+    color: var(--first-color-lighter);
+}
+
+.footer__copy {
+    font-size: var(--smaller-font-size);
+    text-align: center;
+    color: var(--text-color-light);
+    margin-top: var(--mb-3);
+    padding-bottom: 5em;
+}
+
+.footer__title,
+.footer__subtitle,
+.footer_link,
+.footer__social {
+    color: #fff;
 }
