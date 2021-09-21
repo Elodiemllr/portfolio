@@ -74,17 +74,28 @@ tabs.forEach((tab) => {
         });
         tab.classList.add("qualification__active");
     });
-});
+}); /*
 
 /* portfolio*/
-const imgHover = document.querySelectorAll("#portfolio__imgHover");
 
-console.log(imgHover);
+const portfolio__box = document.querySelectorAll(".portfolio__box");
 
-function colorChange(e) {
-    e.target.classList.add("test");
+function showButton(e) {
+    e.currentTarget.children[0].classList.add("portfolio__hover");
+    e.currentTarget.children[1].classList.add("portfolio__sitelink");
+    e.currentTarget.children[2].classList.add("portfolio__github");
 }
 
-imgHover.forEach((el) => {
-    el.addEventListener("click", colorChange);
+function removeButton(e) {
+    e.currentTarget.children[0].classList.remove("portfolio__hover");
+    e.currentTarget.children[1].classList.remove("portfolio__sitelink");
+    e.currentTarget.children[2].classList.remove("portfolio__github");
+}
+
+portfolio__box.forEach((el) => {
+    el.addEventListener("mouseover", showButton);
+});
+
+portfolio__box.forEach((el) => {
+    el.addEventListener("mouseleave", removeButton);
 });
