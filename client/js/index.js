@@ -41,15 +41,17 @@ const skillsHeader = document.querySelectorAll(".skills__header");
 
 function toggleSkills() {
     let itemClass = this.parentNode.className;
-    console.log(this.parentNode.children[0].children[2]);
+    console.log(this.parentNode.children[1]);
 
     if (itemClass === "skills__content skills__close") {
         this.parentNode.className = "skills__content skills__open";
+
         this.parentNode.children[0].children[2].className =
             " uil uil-angle-down skills__arrow ";
+        this.parentNode.children[1].className = "skills__list__show";
     } else if (itemClass === "skills__content skills__open") {
         this.parentNode.className = "skills__content skills__close";
-
+        this.parentNode.children[1].className = "skills__list";
         this.parentNode.children[0].children[2].className =
             "uil uil-angle-up skills__arrow ";
     }
@@ -183,4 +185,8 @@ themeButton.addEventListener("click", () => {
     localStorage.setItem("selected-icon", getCurrentIcon());
 });
 
-/*scroll bar */
+/*modal */
+
+function togglePopup() {
+    document.getElementById("popup-1").classList.toggle("active");
+}

@@ -23,7 +23,12 @@
     <body>
         <header class="header" id="header">
             <nav class="nav container">
-                <a href="#" class="nav__logo">Elodie</a>
+                <a href="#" class="nav__logo">
+                    <img
+                        src="./client/public/img/logo.svg"
+                        alt="logo"
+                        class="logo__elodie"
+                /></a>
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list grid">
                         <li class="nav_item">
@@ -141,9 +146,11 @@
                         </div>
                         <div class="home__data">
                             <h1 class="home__title">Hello, I'm Elodie</h1>
-                            <h3 class="home__subtitle">FullStack developer</h3>
+                            <h3 class="home__subtitle">
+                                web & mobile developer
+                            </h3>
                             <p class="home__description">
-                                Also love webDesign ..
+                                I'm actually searching a job in Luxembourg so...
                             </p>
                             <a href="#contact" class="button button--flex"
                                 >Contact me</a
@@ -172,39 +179,47 @@
                 <span class="section__subtitle">Let me introduce myself </span>
                 <div class="about__container container grid">
                     <img
-                        src="./client/public/img/test.jpeg"
+                        src="./client/public/img/elodiecv.jpg"
                         alt=""
                         class="about__img"
                     />
                     <div class="about__data">
                         <p class="about__description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Obcaecati totam tempora nesciunt cupiditate
-                            provident qui sunt consectetur porro doloremque ut.
-                            Aliquam tempore beatae totam, libero facilis vitae
-                            officiis eius harum.
+                            My name is Elodie and I am 24 years old. I studied
+                            javascript as well as react redux and node for 1
+                            year. My next goal is to get a job and orient myself
+                            in the future on React Native. I'm actually
+                            searching a developer job in Luxembourg
                         </p>
                         <div class="about__info">
                             <div>
-                                <span class="about__info-title">fefze</span>
+                                <span class="about__info-title">
+                                    <i
+                                        class="uil uil-megaphone about__icon"
+                                    ></i>
+                                </span>
                                 <span class="about__info-name">
-                                    Years <br />
-                                    experience</span
+                                    lookking for <br />
+                                    permanent contract
+                                </span>
+                            </div>
+                            <div>
+                                <span class="about__info-title"
+                                    ><i class="uil uil-compass about__icon"></i>
+                                </span>
+                                <span class="about__info-name">
+                                    Luxembourg <br />
+                                    Esch-sur-alzette</span
                                 >
                             </div>
                             <div>
-                                <span class="about__info-title">fefze</span>
+                                <span class="about__info-title"
+                                    ><i class="uil uil-cog about__icon"></i
+                                ></span>
                                 <span class="about__info-name">
-                                    Years <br />
-                                    experience</span
-                                >
-                            </div>
-                            <div>
-                                <span class="about__info-title">fefze</span>
-                                <span class="about__info-name">
-                                    Years <br />
-                                    experience</span
-                                >
+                                    Mongo Express React Node<br />
+                                    javascript, redux
+                                </span>
                             </div>
                         </div>
                         <br />
@@ -214,7 +229,7 @@
                                 href="https://www.canva.com/design/DAEomhTbT-k/Xf5fXBhqljenpsPXLbX7EA/view?utm_content=DAEomhTbT-k&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton"
                                 class="button button--flex"
                             >
-                                Download
+                                Download CV
                                 <i class="uil uil-import button__icon"></i>
                             </a>
                         </div>
@@ -226,9 +241,9 @@
                 <h2 class="section__title">Skills</h2>
                 <span class="section__subtitle">My technical level </span>
                 <div class="skills__container container grid">
-                    <div>
+                    <div class="skills__contain">
                         <!--Skills one -->
-                        <div class="skills__content skills__open">
+                        <div class="skills__content skills__close">
                             <div class="skills__header">
                                 <i
                                     class="uil uil-brackets-curly skills__icon"
@@ -241,73 +256,33 @@
                                         O'clock formation
                                     </span>
                                 </div>
-                                <i class="uil uil-angle-down skills__arrow"></i>
+                                <i class="uil uil-angle-up skills__arrow"></i>
                             </div>
 
                             <div class="skills__list grid">
                                 <div class="skills__data">
                                     <div class="skills__titles">
                                         <h3 class="skills__name">HTML</h3>
-                                        <span class="skills__number">90%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span
-                                            class="
-                                                skills__percentage skills__html
-                                            "
-                                        ></span>
                                     </div>
                                 </div>
                                 <div class="skills__data">
                                     <div class="skills__titles">
                                         <h3 class="skills__name">CSS</h3>
-                                        <span class="skills__number">80%%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span
-                                            class="
-                                                skills__percentage skills__css
-                                            "
-                                        ></span>
                                     </div>
                                 </div>
                                 <div class="skills__data">
                                     <div class="skills__titles">
                                         <h3 class="skills__name">javaScript</h3>
-                                        <span class="skills__number">70%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span
-                                            class="
-                                                skills__percentage skills__js
-                                            "
-                                        ></span>
                                     </div>
                                 </div>
                                 <div class="skills__data">
                                     <div class="skills__titles">
                                         <h3 class="skills__name">React</h3>
-                                        <span class="skills__number">90%</span>
                                     </div>
-                                    <div class="skills__bar">
-                                        <span
-                                            class="
-                                                skills__percentage skills__react
-                                            "
-                                        ></span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Redux</h3>
-                                        <span class="skills__number">90%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span
-                                            class="
-                                                skills__percentage skills__redux
-                                            "
-                                        ></span>
+                                    <div class="skills__data">
+                                        <div class="skills__titles">
+                                            <h3 class="skills__name">Redux</h3>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -333,76 +308,30 @@
                                 <div class="skills__data">
                                     <div class="skills__titles">
                                         <h3 class="skills__name">NODE js</h3>
-                                        <span class="skills__number">90%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span
-                                            class="
-                                                skills__percentage
-                                                skills__nodejs
-                                            "
-                                        ></span>
                                     </div>
                                 </div>
                                 <div class="skills__data">
                                     <div class="skills__titles">
                                         <h3 class="skills__name">PostgreSQL</h3>
-                                        <span class="skills__number">80%%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span
-                                            class="
-                                                skills__percentage skills__pg
-                                            "
-                                        ></span>
                                     </div>
                                 </div>
                                 <div class="skills__data">
                                     <div class="skills__titles">
                                         <h3 class="skills__name">mongoDB</h3>
-                                        <span class="skills__number">70%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span
-                                            class="
-                                                skills__percentage
-                                                skills__mongodb
-                                            "
-                                        ></span>
                                     </div>
                                 </div>
                                 <div class="skills__data">
                                     <div class="skills__titles">
                                         <h3 class="skills__name">Express</h3>
-                                        <span class="skills__number">90%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span
-                                            class="
-                                                skills__percentage
-                                                skills__express
-                                            "
-                                        ></span>
                                     </div>
                                 </div>
                                 <div class="skills__data">
                                     <div class="skills__titles">
                                         <h3 class="skills__name">Postman</h3>
-                                        <span class="skills__number">90%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span
-                                            class="
-                                                skills__percentage
-                                                skills__postman
-                                            "
-                                        ></span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div>
                         <!--Skills three-->
                         <div class="skills__content skills__close">
                             <div class="skills__header">
@@ -420,70 +349,26 @@
                                 <div class="skills__data">
                                     <div class="skills__titles">
                                         <h3 class="skills__name">VS code</h3>
-                                        <span class="skills__number">90%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span
-                                            class="
-                                                skills__percentage
-                                                skills__vscode
-                                            "
-                                        ></span>
                                     </div>
                                 </div>
                                 <div class="skills__data">
                                     <div class="skills__titles">
                                         <h3 class="skills__name">GIT</h3>
-                                        <span class="skills__number">80%%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span
-                                            class="
-                                                skills__percentage skills__git
-                                            "
-                                        ></span>
                                     </div>
                                 </div>
                                 <div class="skills__data">
                                     <div class="skills__titles">
                                         <h3 class="skills__name">Github</h3>
-                                        <span class="skills__number">70%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span
-                                            class="
-                                                skills__percentage
-                                                skills__github
-                                            "
-                                        ></span>
                                     </div>
                                 </div>
                                 <div class="skills__data">
                                     <div class="skills__titles">
                                         <h3 class="skills__name">Trello</h3>
-                                        <span class="skills__number">90%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span
-                                            class="
-                                                skills__percentage
-                                                skills__trello
-                                            "
-                                        ></span>
                                     </div>
                                 </div>
                                 <div class="skills__data">
                                     <div class="skills__titles">
                                         <h3 class="skills__name">Whimsical</h3>
-                                        <span class="skills__number">90%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span
-                                            class="
-                                                skills__percentage
-                                                skills__whimsical
-                                            "
-                                        ></span>
                                     </div>
                                 </div>
                             </div>
@@ -494,7 +379,9 @@
             <!--Qualification -->
             <section class="qualification section" id="qualification">
                 <h2 class="section__title">Qualification</h2>
-                <span class="section__subtitle">Subtitle </span>
+                <span class="section__subtitle"
+                    >Found here my education and work qualification
+                </span>
 
                 <div class="qualification__container container">
                     <div class="qualification__tabs">
@@ -534,17 +421,17 @@
                             <!--1.1-->
                             <div class="qualification__data">
                                 <div>
-                                    <h3 class="qualification__title">1.1</h3>
-                                    <span class="qualification__subtitle">
-                                        LIEU
-                                    </span>
+                                    <h3 class="qualification__title">
+                                        Spécialisation React
+                                    </h3>
+
                                     <div class="qualification__calendar">
                                         <i class="uil uil-calender"></i>
-                                        DATE
+                                        2021
                                     </div>
                                 </div>
 
-                                <div>
+                                <div class="round">
                                     <span class="qualification__rounder"></span>
                                     <span class="qualification__line"></span>
                                 </div>
@@ -554,35 +441,37 @@
                             <div class="qualification__data">
                                 <div></div>
 
-                                <div>
+                                <div class="round">
                                     <span class="qualification__rounder"></span>
                                     <span class="qualification__line"></span>
                                 </div>
-                                <div>
-                                    <h3 class="qualification__title">1.2</h3>
-                                    <span class="qualification__subtitle">
-                                        LIEU
-                                    </span>
+                                <div id="education__info">
+                                    <h3 class="qualification__title">
+                                        Formation développeur web et web mobile
+                                    </h3>
+
                                     <div class="qualification__calendar">
                                         <i class="uil uil-calender"></i>
-                                        DATE
+                                        2020-2021
                                     </div>
                                 </div>
                             </div>
                             <!--1.3-->
                             <div class="qualification__data">
                                 <div>
-                                    <h3 class="qualification__title">1.1</h3>
+                                    <h3 class="qualification__title">
+                                        BAC accueil relations client et usager
+                                    </h3>
                                     <span class="qualification__subtitle">
-                                        LIEU
+                                        Maryse Bastié, Hayange
                                     </span>
                                     <div class="qualification__calendar">
                                         <i class="uil uil-calender"></i>
-                                        DATE
+                                        2016
                                     </div>
                                 </div>
 
-                                <div>
+                                <div class="round">
                                     <span class="qualification__rounder"></span>
                                 </div>
                             </div>
@@ -596,17 +485,19 @@
                             <!--1.1-->
                             <div class="qualification__data">
                                 <div>
-                                    <h3 class="qualification__title">test</h3>
+                                    <h3 class="qualification__title">
+                                        Assistance commercial
+                                    </h3>
                                     <span class="qualification__subtitle">
-                                        LIEU
+                                        C2i Commerce, Luxembourg
                                     </span>
                                     <div class="qualification__calendar">
                                         <i class="uil uil-calender"></i>
-                                        DATE
+                                        2019-2020
                                     </div>
                                 </div>
 
-                                <div>
+                                <div class="round">
                                     <span class="qualification__rounder"></span>
                                     <span class="qualification__line"></span>
                                 </div>
@@ -616,35 +507,39 @@
                             <div class="qualification__data">
                                 <div></div>
 
-                                <div>
+                                <div class="round">
                                     <span class="qualification__rounder"></span>
                                     <span class="qualification__line"></span>
                                 </div>
                                 <div>
-                                    <h3 class="qualification__title">2.test</h3>
+                                    <h3 class="qualification__title">
+                                        Force de vente
+                                    </h3>
                                     <span class="qualification__subtitle">
-                                        LIEU
+                                        Metz, waves
                                     </span>
                                     <div class="qualification__calendar">
                                         <i class="uil uil-calender"></i>
-                                        DATE
+                                        2018
                                     </div>
                                 </div>
                             </div>
                             <!--1.3-->
                             <div class="qualification__data">
                                 <div>
-                                    <h3 class="qualification__title">2.test</h3>
+                                    <h3 class="qualification__title">
+                                        Secrétaire commercial Auto Ecole
+                                    </h3>
                                     <span class="qualification__subtitle">
-                                        LIEU
+                                        Nancy
                                     </span>
                                     <div class="qualification__calendar">
                                         <i class="uil uil-calender"></i>
-                                        DATE
+                                        2017
                                     </div>
                                 </div>
 
-                                <div>
+                                <div class="round">
                                     <span class="qualification__rounder"></span>
                                 </div>
                             </div>
@@ -657,11 +552,11 @@
             <section class="portfolio section" id="portfolio">
                 <h2 class="section__title">My work</h2>
                 <span class="section__subtitle">Most recent work </span>
-                <div class="portfolio__container container">
+                <div class="portfolio__container">
                     <!--first-->
                     <div class="portfolio__box">
                         <img
-                            src="./client/public/img/test.jpeg"
+                            src="./client/public/img/spaceshare.png"
                             alt="prtfolio"
                             class="portfolio__img"
                             id="portfolio__imgHover"
@@ -670,7 +565,7 @@
                             href="https://www.instagram.com/"
                             id="portfolio__sitelink"
                         >
-                            Social Media
+                            Space Share - Social Media
                         </a>
                         <a href="https://github.com/" id="portfolio__github"
                             >Github repo</a
@@ -679,18 +574,42 @@
                     <!--2-->
                     <div class="portfolio__box">
                         <img
-                            src="./client/public/img/test.jpeg"
+                            src="./client/public/img/byerika.png"
                             alt="prtfolio"
                             class="portfolio__img"
                             id="portfolio__imgHover"
                         />
+
                         <a
-                            href="https://www.instagram.com/"
+                            href="#modal"
                             id="portfolio__sitelink"
+                            onclick="togglePopup()"
                         >
-                            Social Media
+                            By Erika - Blog
+                            <div class="popup" id="popup-1">
+                                <div class="overlay"></div>
+                                <div class="content">
+                                    <div
+                                        class="close-btn"
+                                        onclick="togglePopup()"
+                                    >
+                                        &times;
+                                    </div>
+                                    <h1>Une minute ..</h1>
+                                    <p>
+                                        Ce site est encore en developpement. Il
+                                        sera disponible prochainement mais en
+                                        attendant n'hésite pas à suivre mon
+                                        avancé sur github !
+                                    </p>
+                                </div>
+                            </div>
                         </a>
-                        <a href="https://github.com/" id="portfolio__github"
+
+                        <a
+                            href="https://github.com/Elodiemllr/By-Erika"
+                            id="portfolio__github"
+                            data-modal-target="#modal"
                             >Github repo</a
                         >
                     </div>
@@ -702,13 +621,13 @@
                             class="portfolio__img"
                             id="portfolio__imgHover"
                         />
-                        <a
-                            href="https://www.instagram.com/"
-                            id="portfolio__sitelink"
-                        >
-                            Social Media
+                        <a href="#modal" id="portfolio__sitelink">
+                            By Erika - Blog
                         </a>
-                        <a href="https://github.com/" id="portfolio__github"
+                        <a
+                            href="https://github.com/"
+                            id="portfolio__github"
+                            class="link__popup"
                             >Github repo</a
                         >
                     </div>
