@@ -589,12 +589,7 @@
                             <div class="popup" id="popup-1">
                                 <div class="overlay"></div>
                                 <div class="content">
-                                    <div
-                                        class="close-btn"
-                                        onclick="togglePopup()"
-                                    >
-                                        &times;
-                                    </div>
+                                    <div class="close-btn">&times;</div>
                                     <h1>Une minute ..</h1>
                                     <p>
                                         Ce site est encore en developpement. Il
@@ -616,16 +611,33 @@
                     <!--3-->
                     <div class="portfolio__box">
                         <img
-                            src="./client/public/img/test.jpeg"
+                            src="./client/public/img/sonasLuxembourg.png"
                             alt="prtfolio"
                             class="portfolio__img"
                             id="portfolio__imgHover"
                         />
-                        <a href="#modal" id="portfolio__sitelink">
-                            By Erika - Blog
+                        <a
+                            href="#modal"
+                            id="portfolio__sitelink"
+                            onclick="togglePopup()"
+                        >
+                            Sonas - Site vitrine
+                            <div class="popup" id="popup-1">
+                                <div class="overlay"></div>
+                                <div class="content">
+                                    <div class="close-btn">&times;</div>
+                                    <h1>Une minute ..</h1>
+                                    <p>
+                                        Ce site est encore en developpement. Il
+                                        sera disponible prochainement mais en
+                                        attendant n'hésite pas à suivre mon
+                                        avancé sur github !
+                                    </p>
+                                </div>
+                            </div>
                         </a>
                         <a
-                            href="https://github.com/"
+                            href="https://github.com/Elodiemllr/Sonas/blob/main/README.md"
                             id="portfolio__github"
                             class="link__popup"
                             >Github repo</a
@@ -634,22 +646,59 @@
                     <!--first-->
                     <div class="portfolio__box">
                         <img
-                            src="./client/public/img/test.jpeg"
+                            src="./client/public/img/restaurant.png"
                             alt="prtfolio"
                             class="portfolio__img"
                             id="portfolio__imgHover"
                         />
                         <a
-                            href="https://www.instagram.com/"
+                            href="#modal"
                             id="portfolio__sitelink"
+                            onclick="togglePopup()"
                         >
-                            Social Media
+                            Restaurant
+                            <div class="popup" id="popup-1">
+                                <div class="overlay"></div>
+                                <div class="content">
+                                    <div class="close-btn">&times;</div>
+                                    <h1>Une minute ..</h1>
+                                    <p>Ce site est encore en projet.</p>
+                                </div>
+                            </div>
                         </a>
-                        <a href="https://github.com/" id="portfolio__github"
+                        <a
+                            href="https://github.com/Elodiemllr/restauranttest"
+                            id="portfolio__github"
+                            class="link__popup"
                             >Github repo</a
                         >
                     </div>
                     <!--2-->
+                    <!--<div class="portfolio__box">
+                        <img
+                            src="./client/public/img/test.jpeg"
+                            alt="prtfolio"
+                            class="portfolio__img"
+                            id="portfolio__imgHover"
+                        />
+                        <a
+                            href="#modal"
+                            id="portfolio__sitelink"
+                            onclick="togglePopup()"
+                        >
+                            E commerce
+                            <div class="popup" id="popup-1">
+                                <div class="overlay"></div>
+                                <div class="content">
+                                    <div class="close-btn">&times;</div>
+                                    <h1>Une minute ..</h1>
+                                    <p>Ce site est encore en projet.</p>
+                                </div>
+                            </div>
+                        </a>
+                        <
+                    </div>
+
                     <div class="portfolio__box">
                         <img
                             src="./client/public/img/test.jpeg"
@@ -658,33 +707,22 @@
                             id="portfolio__imgHover"
                         />
                         <a
-                            href="https://www.instagram.com/"
+                            href="#modal"
                             id="portfolio__sitelink"
+                            onclick="togglePopup()"
                         >
-                            Social Media
+                            React Native App Test
+                            <div class="popup" id="popup-1">
+                                <div class="overlay"></div>
+                                <div class="content">
+                                    <div class="close-btn">&times;</div>
+                                    <h1>Une minute ..</h1>
+                                    <p>Ce site est encore en projet.</p>
+                                </div>
+                            </div>
                         </a>
-                        <a href="https://github.com/" id="portfolio__github"
-                            >Github repo</a
-                        >
                     </div>
-                    <!--3-->
-                    <div class="portfolio__box">
-                        <img
-                            src="./client/public/img/test.jpeg"
-                            alt="prtfolio"
-                            class="portfolio__img"
-                            id="portfolio__imgHover"
-                        />
-                        <a
-                            href="https://www.instagram.com/"
-                            id="portfolio__sitelink"
-                        >
-                            Social Media
-                        </a>
-                        <a href="https://github.com/" id="portfolio__github"
-                            >Github repo</a
-                        >
-                    </div>
+                     -->
                 </div>
             </section>
 
@@ -755,16 +793,19 @@
                                     name=""
                                     id=""
                                     cols="0"
-                                    rows="7"
+                                    rows="2"
                                     class="contact__input"
                                 ></textarea>
                             </div>
 
                             <div>
-                                <a href="" class="button button--flex"
-                                    >Send Message
+                                <button
+                                    type="submit"
+                                    class="button button--flex"
+                                >
+                                    Send Message
                                     <i class="uil uil-message button__icon"></i>
-                                </a>
+                                </button>
                             </div>
                         </div>
                     </form>
@@ -779,27 +820,6 @@
                         <h1 class="footer__title">Elodie</h1>
                         <span class="footer_subtitle">Developer</span>
                     </div>
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#about" class="footer__link">About me</a>
-                        </li>
-                        <li>
-                            <a href="#portfolio" class="footer__link"
-                                >Portfolio</a
-                            >
-                        </li>
-                        <li>
-                            <a href="#skills" class="footer__link">Skills</a>
-                        </li>
-                        <li>
-                            <a href="#qualification" class="footer__link"
-                                >Qualification</a
-                            >
-                        </li>
-                        <li>
-                            <a href="#contact" class="footer__link">Contact</a>
-                        </li>
-                    </ul>
 
                     <div class="footer__socials">
                         <a

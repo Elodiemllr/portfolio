@@ -64,11 +64,13 @@
 
 /*dark theme var*/
 body.dark-theme {
+    --first-color: hsl(var(--hue-color), 6%, 13%);
+
     --first-color-second: hsl(var(--hue-color), 30%, 8%);
-    --title-color: hsl(var(--hue-color), 8%, 95%);
+    --title-color: hsl(var(--hue-color), 95%, 57%); /*color jaune de base*/
     --text-color: hsl(var(--hue-color), 8%, 75%);
     --input-color: hsl(var(--hue-color), 29%, 16%);
-    --body-color: hsl(var(--hue-color), 28%, 12%);
+    --body-color: hsl(var(--hue-color), 100%, 2%);
     --container-color: hsl(var(--hue-color), 29%, 16%);
     --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
@@ -208,6 +210,22 @@ img {
 }
 
 @media screen and (max-width: 767px) {
+    .contact__inputs {
+        display: grid;
+
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+
+        gap: 0px;
+        height: 100%;
+    }
+
+    .contact__form {
+        width: auto;
+        border-radius: 30px;
+        background-color: var(--first-color);
+    }
+
     .logo__elodie {
         display: none;
     }
@@ -334,7 +352,7 @@ img {
 }*/
 
 .home__scroll-button {
-    color: --first-color;
+    color: var(--text-color-light);
     transition: 0.3s;
 }
 
@@ -372,8 +390,8 @@ img {
 }
 
 .button--flex {
-    display: inline-flex;
-    align-items: center;
+    position: relative;
+    margin: 1em;
 }
 
 /*about */
@@ -577,7 +595,7 @@ img {
 /*portfolio*/
 .portfolio__container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
 
@@ -617,7 +635,7 @@ img {
 
 .portfolio__github {
     position: absolute;
-    z-index: 3;
+    z-index: 1;
     background: var(--title-color);
     color: var(--input-color);
     width: fit-content;
@@ -664,24 +682,25 @@ img {
 }
 
 .contact__content {
-    background-color: var(--text-color-light);
     border-radius: 0.5rem;
     padding: 0.75rem 1rem 0.25rem;
 }
 
 .contact__label {
     font-size: var(--smaller-font-size);
-    color: var(--title-color);
+    color: #fff;
 }
 
 .contact__input {
     width: 100%;
-    color: --text-color;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     border: none;
     outline: none;
     padding: 0.25rem 0.5rem 0.5rem 0;
+    margin-top: 0.5em;
+    grid-template-columns: repeat(2, 2fr);
+    border-radius: 0.5rem;
 }
 
 /* footer */
@@ -694,7 +713,7 @@ img {
 }
 
 .footer__bg {
-    background-color: var(--first-color-second);
+    background-color: var(--first-color);
     pad: 2rem 0 3rem;
 }
 
@@ -729,7 +748,6 @@ img {
     text-align: center;
     color: var(--text-color-light);
     margin-top: var(--mb-3);
-    padding-bottom: 5em;
 }
 
 .footer__title,
@@ -812,6 +830,21 @@ img {
 /*medium */
 
 @media screen and (min-width: 568px) {
+    .contact__inputs {
+        display: grid;
+
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+
+        gap: 0px;
+        height: 100%;
+    }
+
+    .contact__form {
+        width: auto;
+        border-radius: 30px;
+        background-color: var(--first-color);
+    }
     .home__content {
         grid-template-columns: max-content 1fr 1fr;
     }
@@ -847,6 +880,16 @@ img {
     }
 }
 @media screen and (min-width: 768px) {
+    .contact__inputs {
+        display: grid;
+
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+
+        gap: 0px;
+        height: 100%;
+    }
+
     .about__info div {
         margin: 0 2em;
     }
@@ -961,7 +1004,7 @@ img {
     }
 
     .footer__bg {
-        padding: 3rem 0 3.5rem;
+        padding: 2rem 0 2.5rem;
     }
 
     .footer__links {
@@ -971,10 +1014,6 @@ img {
 
     .footer__socials {
         justify-self: flex-end;
-    }
-
-    .footer__copy {
-        margin-top: 4.5rem;
     }
 }
 
@@ -1006,10 +1045,18 @@ img {
 
     .contact__form {
         width: 460px;
+        border-radius: 30px;
+        background-color: var(--first-color);
     }
 
     .contact__inputs {
-        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+
+        gap: 0px;
+        height: 100%;
     }
 
     .home__scroll {
@@ -1032,14 +1079,14 @@ img {
 }
 
 .popup .content {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     background: #fff;
     width: 450px;
     height: 220px;
-    z-index: 1;
+    z-index: 10;
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
