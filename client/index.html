@@ -11,7 +11,7 @@
             href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
         />
 
-        <link rel="stylesheet" href="./client/styles/index.css" />
+        <link rel="stylesheet" href="./styles/index.css" />
         <title>Portfolio Elodie Muller</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,7 +25,7 @@
             <nav class="nav container">
                 <a href="#" class="nav__logo">
                     <img
-                        src="./client/public/img/logo.svg"
+                        src="./public/img/logo.svg"
                         alt="logo"
                         class="logo__elodie"
                 /></a>
@@ -139,7 +139,7 @@
                                         ;
                                         x="-60"
                                         ;
-                                        xlink:href="client/public/img/elodie.png"
+                                        xlink:href="./public/img/elodie.png"
                                     />
                                 </g>
                             </svg>
@@ -179,7 +179,7 @@
                 <span class="section__subtitle">Let me introduce myself </span>
                 <div class="about__container container grid">
                     <img
-                        src="./client/public/img/elodiecv.jpg"
+                        src="./public/img/elodiecv.jpg"
                         alt=""
                         class="about__img"
                     />
@@ -556,7 +556,7 @@
                     <!--first-->
                     <div class="portfolio__box">
                         <img
-                            src="./client/public/img/spaceshare.png"
+                            src="./public/img/spaceshare.png"
                             alt="prtfolio"
                             class="portfolio__img"
                             id="portfolio__imgHover"
@@ -574,7 +574,7 @@
                     <!--2-->
                     <div class="portfolio__box">
                         <img
-                            src="./client/public/img/byerika.png"
+                            src="./public/img/byerika.png"
                             alt="prtfolio"
                             class="portfolio__img"
                             id="portfolio__imgHover"
@@ -611,7 +611,7 @@
                     <!--3-->
                     <div class="portfolio__box">
                         <img
-                            src="./client/public/img/sonasLuxembourg.png"
+                            src="./public/img/sonasLuxembourg.png"
                             alt="prtfolio"
                             class="portfolio__img"
                             id="portfolio__imgHover"
@@ -646,7 +646,7 @@
                     <!--first-->
                     <div class="portfolio__box">
                         <img
-                            src="./client/public/img/restaurant.png"
+                            src="./public/img/restaurant.png"
                             alt="prtfolio"
                             class="portfolio__img"
                             id="portfolio__imgHover"
@@ -771,19 +771,31 @@
                                 <label for="" class="contact__label"
                                     >Name</label
                                 >
-                                <input type="text" class="contact__input" />
+                                <input
+                                    type="text"
+                                    id="fullName"
+                                    class="contact__input"
+                                />
                             </div>
                             <div class="contact__content">
                                 <label for="" class="contact__label"
                                     >Email</label
                                 >
-                                <input type="email" class="contact__input" />
+                                <input
+                                    type="email"
+                                    id="email"
+                                    class="contact__input"
+                                />
                             </div>
                             <div class="contact__content">
                                 <label for="" class="contact__label"
-                                    >Object</label
+                                    >Subject</label
                                 >
-                                <input type="text" class="contact__input" />
+                                <input
+                                    type="text"
+                                    id="subject"
+                                    class="contact__input"
+                                />
                             </div>
                             <div class="contact__content">
                                 <label for="" class="contact__label"
@@ -791,7 +803,7 @@
                                 >
                                 <textarea
                                     name=""
-                                    id=""
+                                    id="message"
                                     cols="0"
                                     rows="2"
                                     class="contact__input"
@@ -799,13 +811,12 @@
                             </div>
 
                             <div>
-                                <button
+                                <input
                                     type="submit"
                                     class="button button--flex"
-                                >
-                                    Send Message
-                                    <i class="uil uil-message button__icon"></i>
-                                </button>
+                                    value="send Message"
+                                >  
+                                </input>
                             </div>
                         </div>
                     </form>
@@ -860,6 +871,6 @@
         <a href="#" class="scrollup" id="scroll-up">
             <i class="uil uil-angle-double-up scrollup__icon"></i>
         </a>
-        <script src="./client/js/index.js"></script>
+        <script src="./js/index.js"></script>
     </body>
 </html>
