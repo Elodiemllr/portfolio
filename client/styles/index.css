@@ -593,6 +593,9 @@ img {
 }
 
 /*portfolio*/
+#portfolio {
+    background-color: var(--first-color);
+}
 .portfolio__container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -650,7 +653,7 @@ img {
 }
 
 .portfolio__hover {
-    opacity: 0.1;
+    opacity: 0.5;
     transition: 0.5s;
 }
 
