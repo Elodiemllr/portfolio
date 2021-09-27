@@ -659,8 +659,13 @@ img {
 
 /* CONTACT */
 
-.contact__container {
+#contact__container {
     row-gap: 3rem;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.contact__div {
+    margin: auto;
 }
 
 .contact__information {
