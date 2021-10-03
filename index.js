@@ -17,11 +17,11 @@ const corsOptions = {
 };
 app.use(cors(corsOptions));
 
-app.use(express.static("client"));
+app.use(express.static("clientjs"));
 app.use(express.json());
 
 app.get("/", (req, res) => {
-    res.sendFile(__dirname + "/client/index.html");
+    res.sendFile(__dirname + "/clientjs/index.html");
 });
 
 app.post("/", (req, res) => {
