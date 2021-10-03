@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 5000;
 
 //ici on précise tout ce qu'on autorise
 const corsOptions = {
-    origin: "http://localhost:8080",
+    origin: "https://localhost:8080",
     credentials: true,
     optionSuccessStatus: 200,
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
