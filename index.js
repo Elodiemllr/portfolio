@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require("cors");
 const https = require("https");
 const fs = require("fs");
 const path = require("path");
@@ -10,6 +11,15 @@ const app = express();
 const nodemailer = require("nodemailer");
 
 const PORT = process.env.PORT || 5000;
+
+//ici on précise tout ce qu'on autorise
+const corsOptions = {
+    origin: "http://localhost:8080",
+    credentials: true,
+    optionSuccessStatus: 200,
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+};
+app.use(cors(corsOptions));
 
 app.use(express.static("clientjs"));
 app.use(express.json());
