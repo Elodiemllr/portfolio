@@ -1,27 +1,15 @@
 const express = require("express");
 const cors = require("cors");
-/*const https = require("https"),
-    fs = require("fs");
-require("dotenv").config({ path: "./config/.env" });
-const options = {
-    key: fs.readFileSync("/srv/www/keys/my-site-key.pem"),
-    cert: fs.readFileSync("/srv/www/keys/chain.pem"),
-};*/
 const app = express();
-
 const nodemailer = require("nodemailer");
+
+require("dotenv").config({ path: "./config/.env" });
 
 const PORT = process.env.PORT || 5000;
 
 //ici on précise tout ce qu'on autorise
 
-const corsOptions = {
-    origin: "https://localhost:8080",
-    credentials: true,
-    optionSuccessStatus: 200,
-    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-};
-app.use(cors(corsOptions));
+app.use(cors());
 
 app.use(express.static("clientjs"));
 app.use(express.json());
@@ -59,5 +47,6 @@ app.post("/", (req, res) => {
     });
 });
 
-app.listen(PORT, () => console.log("it s Secure"));
-//https.createServer(options, app).listen(8080);
+app.listen(PORT, () => {
+    console.log(`Listening on http://localhost:${PORT}`);
+});
