@@ -1,4 +1,5 @@
 import React from "react";
+import DarkMode from "./DarkMode.js";
 
 const NavBar = () => {
     return (
@@ -49,6 +50,7 @@ const NavBar = () => {
                     <i class="uil uil-apps"></i>
                 </div>
             </div>
+            <DarkMode></DarkMode>
         </>
     );
 };
